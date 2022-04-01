@@ -58,6 +58,12 @@ body {
     width: 40vw;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 #main-content {
     background-color: cadetblue;
     height: 100vh;
