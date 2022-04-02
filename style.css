@@ -86,8 +86,8 @@ a:visited {
     color: white;
 }
 
-/* begins the right side of the page */
 
+/* begins the right side of the page */
 #main-content {
     background-color: #cecdcd;
     height: 100vh;
@@ -109,16 +109,46 @@ a:visited {
     margin-top: -25px;
 }
 
+
+/* styles for from body */
 .form-body {
     background-color: #FFFFFF;
     padding: 0px 20px 40px 40px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
     /* border: 1px solid black; */
 }
 
 .form-body > p {
     font-size: 2.8rem;
     margin-top: 16px;
+    letter-spacing: normal;
 }
+
+form {
+    max-width: 700px;
+    /* border: 1px solid black; */
+}
+
+label, input {
+    display: block;
+}
+
+.left {
+    float: left;
+    margin-right: 70px;
+    
+}
+
+.right {
+    float: left;
+    margin-right: 200px;
+}
+
+
+
+
 
 
 
