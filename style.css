@@ -34,7 +34,7 @@ img {
 .cap-background {
     position: absolute;
     width: 100%;
-    height: 220px;
+    height: 320px;
     background: black;
     opacity: 0.5;
     color: white;
@@ -51,23 +51,20 @@ img {
     top: 24rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 40vw;
+    height: 320px;
     
 }
 
 .cap-image {
-    /* position: absolute; */
-    top: 24rem;
-    width: 150px;
+    height: 300px;
 }
 
 .cap-text {
-    /* position: absolute; */
-    top: 24rem;
     color: white;
     font-size: 4em;
     font-family: norse-bold;
-    /* text-align: center; */
 }
 
 .cap-credit {
