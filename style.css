@@ -86,7 +86,7 @@ a:visited {
 
 /* begins the right side of the page */
 #main-content {
-    background-color: #cecdcd;
+    background-color: #F9FAFB;
     height: 100vh;
     width: 60vw;
     display: flex;
@@ -95,8 +95,9 @@ a:visited {
 }
 
 .info {
-    padding: 100px 80px 20px 40px;
-    font-size: 2.8rem;
+    margin-top: 160px;
+    padding: 100px 80px 80px 80px;
+    font-size: 2.2rem;
     /* margin-bottom: 40px; */
     /* border: 1px solid black; */
 }
@@ -110,26 +111,42 @@ a:visited {
 /* styles for from body */
 .form-body {
     background-color: #FFFFFF;
-    padding: 0px 20px 40px 40px;
-    font-size: 1rem;
+    padding: 0px 20px 40px 80px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .2em;
     /* border: 1px solid black; */
+    box-shadow: 0px 5px 10px #d1d1d3;
 }
 
 .form-body > p {
-    font-size: 2.8rem;
-    margin-top: 16px;
+    font-size: 2.2rem;
+    margin-top: 30px;
     letter-spacing: normal;
+    text-transform: none;
 }
 
 form {
-    max-width: 700px;
+    max-width: 1400px;
     /* border: 1px solid black; */
 }
 
 label, input {
     display: block;
+    box-sizing: border-box;
+}
+
+input {
+    width: 500px;
+    height: 60px;
+    margin: 0px 60px 40px 0px;
+    padding: 0px 15px 0px 15px;
+    font-size: 1.5em;
+    /* margin-bottom: 40px;
+    margin-right: 60px; */
+    border-radius: 8px;
+    border: 1px solid rgb(206, 206, 206);
+    
 }
 
 .left {
@@ -151,12 +168,20 @@ label, input {
 
 .form-button {
     /* border: 1px solid black; */
-    padding: 0px 20px 50px 40px;
+    padding: 40px 20px 10px 80px;
 }
 
 button {
     font-size: 36px;
     font-weight: bold;
-    width: 150px;
-    height: 40px
+    width: 420px;
+    height: 100px;
+    border-radius: 16px;
+    background-color: #596D48;
+    color: white;
+}
+
+.form-button > p a{
+    color: #63755b;
+    font-weight: bold;
 }
