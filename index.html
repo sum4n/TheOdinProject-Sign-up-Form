@@ -36,11 +36,11 @@
             <form id="sign_in_form" action="#">
                 <div class="left">
                     <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name" required>
+                    <input type="text" id="first_name" name="first_name" minlength="3" maxlength="20" required>
                 </div>
                 <div class="right">
                     <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" required>
+                    <input type="text" id="last_name" name="last_name" minlength="3" maxlength="20" required>
                 </div>
                 <div class="left">
                     <label for="email">Email</label>
@@ -52,11 +52,12 @@
                 </div>
                 <div class="left">
                     <label for="password">Password</label>
-                    <input type="text" id="password" name="password" required>
+                    <input type="password" id="password" class="error" name="password" required>
+                    <p class="error-message">*Passwords do not match</p>
                 </div>
                 <div class="right">
                     <label for="confirm_password">Confirm Password</label>
-                    <input type="text" id="confirm_password" name="confirm_password" required>
+                    <input type="password" id="confirm_password" class="error" name="confirm_password" required>
                 </div>
             </form>
         </div>
