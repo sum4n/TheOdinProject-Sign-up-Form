@@ -8,63 +8,55 @@
     <title>Sign-up</title>
 </head>
 <body>
-    <div id="image">
-        <img id="b_image" src="./images/photo-1585202900225-6d3ac20a6962.avif" alt="">
-        <div class="cap-background"></div>
-        <div class="cap-content">
-            <div class="cap-image">
-                <img src="./images/odin-lined.png" alt="">
-            </div>
-            <div class="cap-text">
-                <p>ODIN</p>
+    <div class="content">
+        
+        <div class="right">
+            <div class="logo">
+                <img src="./images/odin-lined.png" alt="odin-logo" class="odin-logo">
+                <h1 class="odin">Odin</h1>
             </div>
         </div>
-        <div class="cap-credit">
-            <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noopener noreferrer">Halie West</a> on <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
-        </div>
-    </div>
-    
-    <div id="main-content">
-        <div class="info">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your
-                deepest dreams.</p>
-            <p>Sign up <em>now</em> to get started.</p>
-            <p>You <em>know</em> you want to.</p>
-        </div>
-        <div class="form-body">
-            <p>Let's do this!</p>
-            <form id="sign_in_form" action="#">
-                <div class="left">
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name" minlength="3" maxlength="20" required>
+
+        <div class="left">
+            <div class="info-text">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started</p>
+                <p>You know you want to.</p>
+            </div>
+            <form action="#">
+                <p>Let's do this!</p>
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
                 </div>
-                <div class="right">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" minlength="3" maxlength="20" required>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
                 </div>
-                <div class="left">
+                <div>
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div class="right">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="phone" required>
+                <div>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" id="phone-number" name="phone-number" required>
                 </div>
-                <div class="left">
+                <div>
                     <label for="password">Password</label>
-                    <input type="password" id="password" class="error" name="password" required>
-                    <p class="error-message">*Passwords do not match</p>
+                    <input type="password" id="password" name="password" required>
                 </div>
-                <div class="right">
-                    <label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" class="error" name="confirm_password" required>
+                <div>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
                 </div>
+                
+                <button type="submit">Create Account</button>
             </form>
+            
+            <p>Already have an account?<a href="#">Log in</a></p>
+
         </div>
-        <div class="form-button">
-            <button form="sign_in_form" type="submit">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
+
     </div>
 </body>
 </html>
