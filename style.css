@@ -7,3 +7,56 @@
     src: url(./fronts/NotoSerif-Regular.ttf);
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: noto-serif, sans-serif;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 40vw;
+    background-image: url(./images/photo-1585202900225-6d3ac20a6962.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 40vw 100vh;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 0.5; changes opacity of entire div elements + its children*/ 
+    /* so use rgba value to give opacity */
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    top: 20vh;
+    padding: 12px 0;
+}
+
+.odin-text {
+    color: white;
+    font-family: norse-bold;
+    font-size: 10vh;
+}
+
+.odin-logo {
+    height: 15vh;
+}
+
+
+.right {
+    width: 60vw;
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vw;
+}
