@@ -11,34 +11,39 @@
     margin: 0px;
     padding: 0px;
     font-family: noto-serif, sans-serif;
+    box-sizing: border-box;
+    /* box-sizing: border-box is the essential element to place the left items 
+    and right items side by side. */
+    outline: 1px solid red;
 }
 
 .content {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-flow: row wrap;
 }
+
 
 .left {
     width: 40vw;
     background-image: url(./images/photo-1585202900225-6d3ac20a6962.avif);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 40vw 100vh;
+    background-size: 100% 100%;
 }
 
 .logo {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     /* opacity: 0.5; changes opacity of entire div elements + its children*/ 
     /* so use rgba value to give opacity */
-    justify-content: center;
-    align-items: center;
-    
+   
     position: relative;
     top: 20vh;
-    padding: 12px 0;
+    padding: 8px 0;
 }
 
 .odin-text {
@@ -58,5 +63,5 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 2vw;
+    padding-left: 3vw;
 }
