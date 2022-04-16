@@ -14,7 +14,7 @@
     box-sizing: border-box;
     /* box-sizing: border-box is the essential element to place the left items 
     and right items side by side. */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .content {
@@ -57,11 +57,99 @@
 }
 
 
+/* right side */
+
 .right {
     width: 60vw;
     background-color: #F9FAFB;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.info-text {
+    font-style: noto-serif, sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 90%;
     padding-left: 3vw;
+}
+
+.info-text p:last-child {
+    padding: 30px 0 50px;
+}
+
+
+form {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px #d1d1d3;
+    
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px 0 20px 3vw;
+}
+
+label, input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 70%;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: .6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input {
+    height: 30px;
+    padding: 0 8px;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 5px 5px 5px #d1d1d3;
+}
+
+form > p {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+form div {
+    width: 400px;
+}
+
+.button {
+    padding: 40px 3vw;
+}
+
+button{
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #596D48;
+    color: white;
+    box-shadow: 0px 5px 5px #596d48;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    background-color: #7d9766;
+    box-shadow: 0px 5px 5px #7d9766;
+    color: black;
+}
+
+.button a {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: bolder;
 }
