@@ -41,7 +41,8 @@
     /* opacity: 0.5; changes opacity of entire div elements + its children*/ 
     /* so use rgba value to give opacity */
    
-    position: relative;
+    position: fixed;
+    width: 40vw;
     top: 20vh;
     padding: 8px 0;
 }
@@ -56,6 +57,20 @@
     height: 15vh;
 }
 
+.image-credit {
+    color: white;
+    position: fixed;
+    top: 90vh;
+    width: 40vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.image-credit a {
+    color: white;
+}
 
 /* right side */
 
