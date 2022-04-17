@@ -105,6 +105,16 @@ form {
     padding: 20px 0 20px 3vw;
 }
 
+form > p {
+    width: 90%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+form div {
+    width: 400px;
+}
+
 label, input {
     display: flex;
     flex-flow: column wrap;
@@ -130,14 +140,17 @@ input:focus {
     box-shadow: 5px 5px 5px #d1d1d3;
 }
 
-form > p {
-    width: 100%;
-    font-size: 1.3rem;
-    font-weight: bold;
+.password-error input {
+    border: 1px solid red;
 }
 
-form div {
-    width: 400px;
+.password-error input:focus {
+    outline: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: .7rem;
 }
 
 .button {
